@@ -48,9 +48,13 @@ By default, you will be logged into the login nodes, where your are not suppose 
 
 ## Setting up HPC in VSCode
 
-1. Connect current window to host
-2. Add new SSH host
-3. `ssh {kerberos_username}@hpc.iitd.ac.in`, enter twice, then connect
+1. In the bottom left of the VSCode, click on the green button, like below
+   ![VSCode](nodes/vscode.png)
+   <br /><br />
+   
+3. Connect current window to host
+4. Add new SSH host
+5. `ssh {kerberos_username}@hpc.iitd.ac.in`, enter twice, then connect
 
 ## Internet Setup
 
