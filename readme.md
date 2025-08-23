@@ -1,5 +1,21 @@
 # HPC Documentation
 
+### Table of Contents
+1.  [Information about HPC](#information-about-hpc)
+    -   [About storage](#about-storage)
+    -   [About Nodes](#about-nodes)
+2.  [Account Creation in HPC](#account-creation-in-hpc)
+3.  [Setting up HPC in VSCode](#setting-up-hpc-in-vscode)
+4.  [Internet Setup](#internet-setup)
+5.  [Conda Setup](#conda-setup)
+6.  [Types of Jobs](#types-of-jobs)
+    -   [Interactive](#interactive)
+    -   [Batch](#batch)
+7.  [Research Proxy Setup](#research-proxy-setup)
+8.  [Data Sharing between 2 HPC Accounts](#data-sharing-between-2-hpc-accounts)
+9.  [AMGR](#amgr)
+
+
 ## Information about HPC
 
 #### About storage
@@ -16,6 +32,7 @@
 ![AMD Info](nodes/amd.png)
 <br /><br />
 
+By default, you will be logged into the login nodes, where your are not suppose to run any job.
 ![Login Info](nodes/login.png)
 
 ## Account Creation in HPC
