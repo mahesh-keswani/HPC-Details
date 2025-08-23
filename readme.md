@@ -49,6 +49,7 @@ By default, you will be logged into the login nodes, where your are not suppose 
 ## Setting up HPC in VSCode
 
 1. In the bottom left of the VSCode, click on the green button, like below
+   <br />
    ![VSCode](nodes/vscode.png)
    <br /><br />
    
