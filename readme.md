@@ -2,12 +2,25 @@
 
 ## Information about HPC
 
+#### About storage
 - In the root, we get 100GB storage
 - In the scratch, we get 2TB
 
+#### About Nodes
+![Skylake Info](nodes/skylake.png)
+<br /><br />
+
+![Icelake Info](nodes/icelake.png)
+<br /><br />
+
+![AMD Info](nodes/amd.png)
+<br /><br />
+
+![Login Info](nodes/login.png)
+
 ## Account Creation in HPC
 
-1. You can apply for HPC account using the following link Apply for account
+1. You can apply for HPC account using the following link [Apply for account](https://userm.iitd.ernet.in/usermanage/hpc.html)
 2. Login using your Kerberos ID and Password
 3. Fill `raunakbh` as ‘Faculty supervisor (uid)’
 4. Choose **15th December** as Expiry Date
@@ -24,7 +37,7 @@
 
 ## Internet Setup
 
-1. Download proxy.sh script from here and drag and drop to your hpc
+1. Download proxy.sh script from this repo and drag and drop to your hpc
 2. In the username and password, add your kerberos credentials
 3. In the `proxy_add` variable, use `https://proxy{PROGRAM_CODE}.iitd.ernet.in/cgi-bin/proxy.cgi`
     - PROGRAM_CODE is the value from below map:
@@ -62,7 +75,7 @@
 
 ## Types of Jobs
 
-### Interactive
+#### Interactive
 
 1. Request an interactive job:
     ```
@@ -70,26 +83,26 @@
     ```
     - NODE = icelake, skylake, haswell (default: haswell)
     - QUEUE = standard (default), high (high priority queue), scai_q  
-    - Charges for different queues can be checked separately
+    - Charges for different queues can be checked [here](https://supercomputing.iitd.ac.in/?charge)
 2. If the internet connection breaks or the terminal is killed, the running job will also be killed.
 3. You can use tools like `screen` or `tmux`; jobs requested inside these will continue even if connection breaks
 
-### Batch
+#### Batch
 
-1. Obtain the generic script for the batch job from provided resources
+1. Obtain the generic script for the batch job from this repo.
 2. Submit the job:
     ```
     qsub batchjob.sh
     ```
-3. Check status:
+3. Check status of all jobs:
     ```
     qstat -T -u {kerberos_userid}
     ```
-4. Detailed job information:
+4. To get detailed job information:
     ```
     qstat -ans {job_id}
     ```
-5. Delete job:
+5. To delete job:
     ```
     qdel {job_id}
     ```
@@ -98,11 +111,11 @@
 - The job can be requested for a maximum of 168 hours
 - Maximum 10 jobs can run simultaneously
 - Maximum 2 jobs (per user) on `scai_q` queue
-- **Never run code on login nodes**
+- **Never run code on login nodes, after 30 warning notifications, your HPC account will be banned**
 
 ## Research Proxy Setup
 
-1. Download the `research_proxy.sh` file from the provided link
+1. Download the `research_proxy.sh` file from this repo and add it your hpc.
 2. Add your kerberos credentials to the file
 3. Request an HPC job
 4. Make the bash file executable and then execute it using:
