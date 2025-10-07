@@ -55,7 +55,7 @@ By default, you will be logged into the login nodes, where your are not suppose 
    
 3. Connect current window to host
 4. Add new SSH host
-5. `ssh {kerberos_username}@hpc.iitd.ac.in`, enter twice, then connect
+5. `ssh {kerberos_username}@login1.hpc.iitd.ac.in`, enter twice, then connect
 
 ## Internet Setup
 
